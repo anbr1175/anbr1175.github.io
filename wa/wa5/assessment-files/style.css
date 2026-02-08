@@ -172,6 +172,12 @@ audio {
 
 /* Comments styling */
 
+
+.toggle-btn:focus {
+  outline: 2px solid #1e90ff;
+  outline-offset: 2px
+}
+
 .comments {
   background-color: #def;
   padding: 10px;
