@@ -96,11 +96,10 @@
           <source src="media/bear.ogg" type="audio/ogg" alt="bear info">
           <p>It looks like your browser doesn't support HTML5 audio players.</p>
         </audio>
-        <button type="button" aria-expanded="false" aria-controls="audio-transcript" id="transcript-toggle">Show transcript</button>
-        <div id="audio-transcript" hidden>
+        <section id="audio-transcript">
           <h2>Transcript</h2>
           <p>This isn't <em>really</em> an audio file about bears, but it is an audio file you can transcribe.</p>
-        </div>
+        </section>
 
         <aside>
 
@@ -110,7 +109,7 @@
 
         </aside>
         <section class="comments">
-          <button id="toggleComments" class="toggle-btn" aria-expanded="false" aria-controls="comments-panel">Show comments</button>
+          <button id="comments-toggle" class="toggle-btn" aria-expanded="false" aria-controls="comments-panel">Show comments</button>
             <div id="comments-panel" hidden>
 
           <div class="comment-wrapper">

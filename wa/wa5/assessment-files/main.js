@@ -46,14 +46,4 @@ function submitComment() {
   commentField.value = '';
 };
 
-// functionality for the transcript button
 
-const toggle = document.getElementById("transcript-toggle");
-const transcript = document.getElementById("audio-transcript");
-
-toggle.addEventListener("click", () => {
-  const expanded = toggle.getAttribute("aria-expanded") === "true";
-  toggle.setAttribute("aria-expanded", String(!expanded));
-  toggle.textContent = expanded ? "Show transcript" : "Hide transcript";
-  transcript.hidden = expanded;
-})
