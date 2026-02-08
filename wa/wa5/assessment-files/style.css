@@ -23,7 +23,7 @@ header, h1, h2, font[size="7"], font[size="6"], font[size="5"] {
   color: #2a2a2a;
 }
 
-p, input, li, table, label {
+p, caption, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
@@ -51,7 +51,7 @@ p, li, table {
 
 /* || header layout */
 
-main, body, nav, article, footer, .secondary {
+main, body, article, footer, .secondary {
   background-color: white;
 }
 
