@@ -28,9 +28,9 @@
         color: #fb6542;
       }
 
+      a:link,
       a:hover {
-        text-decoration: none;
-        color: green
+        color: green;
       }
 
       ul {
