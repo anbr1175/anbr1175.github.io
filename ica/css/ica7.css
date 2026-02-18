@@ -28,7 +28,6 @@
         color: #fb6542;
       }
 
-      a:link,
       a:hover {
         color: green;
       }
@@ -36,5 +35,5 @@
       ul {
         background-color: #eeeeee;
         border: 5px solid purple;
-        padding: 2px, 2px, 2px, 2px
+        padding: 2em, 2em, 2em, 2em;
       }
