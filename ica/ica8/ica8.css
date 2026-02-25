@@ -47,5 +47,5 @@ h1 {
 /* Your CSS below here */
 
 .rah {
-    filter: drop-shadow(1px 1px 1px black);
+    filter: drop-shadow(5px 5px 1px black);
 }
