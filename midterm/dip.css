@@ -1,3 +1,75 @@
+:root {
+/* Color Palette */
+    --color-background: #fffefa;
+    --color-accent: #D83148;
+    --brown: #725752;
+    --black: #041F1E;
+    --olive: #6C7D47;
+    --lightblue: #B2CEDE;
+
+    --font-title: "Helvetica", sans-serif;
+    --font-head: "SN Pro", sans-serif;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
+    color: var(--black);
+    background-color: var(--color-background);
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-variant: small-caps;
+}
+
+.dropdown {
+    font-family: var(--font-title);
+    align-items: center;
+    position: relative;
+    left: 95%;
+    
+}
+
+.dropbtn {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    font-variant: small-caps;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 20%;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-contents {
+    padding: 4px;
+    align-items: center;
+    font-family: var(--font-head);
+    font-size: 14px;
+    align-items: center;
+    display: none;
+    position: absolute;
+    min-width: 50px;
+}
+
+.dropdown-contents a {
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contents a:hover {
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-contents{
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #d83147c2;
+}
+
+footer {
+    font-family: var(--font-head);
 }
