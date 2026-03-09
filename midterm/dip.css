@@ -123,13 +123,13 @@ ul {
 }
 
 li::before {
-    align-items:center;
+    align-items: center;
     content: '';
     display:inline-flex;
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     margin-right: 8px;
-    background-image: url('blackstar.jpg');
+    background-image: url('blackstar.png');
     image-rendering: optimizeQuality;
     background-size: contain;
     background-repeat: no-repeat;
