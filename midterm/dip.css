@@ -11,15 +11,31 @@
     --font-head: "SN Pro", sans-serif;
 }
 
+* {
+    margin: 4px;
+    padding: 4px;
+}
+
+p {
+    font-family: var(--font-head);
+    font-size: 14px;
+}
+
 body {
     color: var(--black);
     background-color: var(--color-background);
+    font-family: var(--font-head);
 }
 
 h1 {
     font-family: var(--font-title);
     text-transform: uppercase;
     color: #fffefa;
+}
+
+h2 {
+    font-family: var(--font-title);
+    font-size: 24px;
 }
 
 header {
@@ -80,3 +96,4 @@ header {
 footer {
     font-family: var(--font-head);
 }
+
