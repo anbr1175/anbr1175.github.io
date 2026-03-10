@@ -138,6 +138,36 @@ li::before {
     left: 8px;
 }
 
+#container {
+    font-weight: bolder;
+    text-align: center;
+    width: 500px;
+    height: 75px;
+    display: flex;
+    padding: 8px;
+}
+
+#container > div {
+    padding: 16px;
+    border: 8px var(--lightblue) solid;
+}
+
+#container:hover {
+    cursor: pointer;
+    color: var(--color-accent);
+}
+
+#container a {
+    text-align: center;
+    color: var(--brown);
+    text-decoration: none;
+}
+
+#container a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
 footer {
     position: relative;
     font-family: var(--font-head);
