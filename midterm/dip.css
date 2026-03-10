@@ -101,6 +101,10 @@ header {
     align-items: center;
 }
 
+.projects > img, video {
+    filter: drop-shadow(8px 8px 4px var(--lightblue));
+}
+
 .abthead {
     background-color: #6C7D47;
     color: var(--color-background);
