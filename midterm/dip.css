@@ -30,7 +30,7 @@ body {
 h1 {
     font-family: var(--font-title);
     text-transform: uppercase;
-    color: #fffefa;
+    color: var(--brown);
     text-align: right;
 }
 
@@ -64,7 +64,7 @@ header {
 .dropbtn {
     font-family: var(--font-title);
     background-color: transparent;
-    color: #fffefa;
+    color: var(--brown);
     text-transform: uppercase;
     font-size: 24px;
     font-weight: bolder;
@@ -95,7 +95,8 @@ header {
 
 .dropdown-contents a:hover {
     text-decoration: underline;
-    background-color: #fffefa;
+    color: var(--color-background);
+    background-color: var(--color-accent);
 }
 
 .dropdown:hover .dropdown-contents{
