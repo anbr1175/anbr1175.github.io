@@ -31,6 +31,7 @@ h1 {
     font-family: var(--font-title);
     text-transform: uppercase;
     color: #fffefa;
+    text-align: right;
 }
 
 h2 {
@@ -38,6 +39,10 @@ h2 {
     font-size: 1.75rem;
     text-align: center;
     font-family: var(--font-title);
+}
+
+h4 {
+    text-align: center;
 }
 
 header {
@@ -52,17 +57,16 @@ header {
 .dropdown {
     font-family: var(--font-head);
     position: relative;
-    display: inline-block;
-    
+    display: inline-block;    
 }
 
 .dropbtn {
-    background-color: var(--color-background);
-    color: var(--color-accent);
+    font-family: var(--font-title);
+    background-color: transparent;
+    color: #fffefa;
     text-transform: uppercase;
-    padding: 12px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: bolder;
     border: none;
     cursor: pointer;
 }
@@ -74,15 +78,14 @@ header {
     font-size: 14px;
     display: none;
     position: absolute;
-    transform: translateX(-100%);
-    top: 0;
+    transform: translateX(100%);
+    top: 6%;
     right: 0;
     min-width: 50px;
     z-index: 1;
 }
 
 .dropdown-contents a {
-    text-align: center;
     color: black;
     padding: 4px;
     text-decoration: none;
@@ -91,7 +94,7 @@ header {
 
 .dropdown-contents a:hover {
     text-decoration: underline;
-    background-color: var(--lightblue);
+    background-color: #fffefa;
 }
 
 .dropdown:hover .dropdown-contents{
