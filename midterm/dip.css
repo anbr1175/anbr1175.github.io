@@ -154,8 +154,8 @@ li::before {
 .starmain {
     position: relative;
     align-items: center;
-    width: 32px;
-    height: 32px;
+    width: 16px;
+    height: 16px;
 }
 
 footer {
