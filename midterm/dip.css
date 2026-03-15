@@ -74,7 +74,8 @@ header {
     font-size: 14px;
     display: none;
     position: absolute;
-    top: 100%;
+    transform: translateX(-100%);
+    top: 0;
     right: 0;
     min-width: 50px;
     z-index: 1;
