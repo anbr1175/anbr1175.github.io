@@ -171,5 +171,16 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    h1 {
+        text-align: center;
+    }
+    
+    .dropbtn {
+        margin-top: 24px;;
+    }
+    .dropdown-contents {
+        top: 24px;
+    }
 }
 
