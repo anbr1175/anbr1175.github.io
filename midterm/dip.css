@@ -48,16 +48,17 @@ h4 {
 header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 8px solid #B2CEDE;
-    background-color: #725752;
-    padding: 16px;
-    align-items: baseline;
+    border-bottom: 16px solid #725752;
+    background-color: #B2CEDE;
+    padding: 8px;
+    align-items: center;
 }
 
 .dropdown {
     font-family: var(--font-head);
     position: relative;
-    display: inline-block;    
+    display: inline-block;  
+    translate: 0px -40px;
 }
 
 .dropbtn {
@@ -153,9 +154,9 @@ li::before {
 
 .starmain {
     position: relative;
-    align-items: center;
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
+    image-rendering: optimizeQuality;
 }
 
 footer {
