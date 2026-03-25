@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>ICA11</title>
         <meta charset="UTF-8">
     </head>
 <body>
+    <div>
+  <label for="custom-name">Enter custom name:</label>
+  <input id="custom-name" type="text" placeholder="" />
+</div>
+<fieldset>
+  <legend>Choose locale:</legend>
+  <label for="us">US</label
+  ><input id="us" type="radio" name="uk-us" value="us" checked />
+  <label for="uk">UK</label
+  ><input id="uk" type="radio" name="uk-us" value="uk" />
+</fieldset>
+<div>
+  <button class="generate">Generate random story</button>
+</div>
+<!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+<p class="story"></p>
     <script>
 // Complete variable definitions and random function
 const customName = document.getElementById("custom-name");
@@ -52,23 +69,7 @@ function generateStory() {
   story.textContent = newStory;
   story.style.visibility = "visible";
 }
-
     </script>
-<div>
-  <label for="custom-name">Enter custom name:</label>
-  <input id="custom-name" type="text" placeholder="" />
-</div>
-<fieldset>
-  <legend>Choose locale:</legend>
-  <label for="us">US</label
-  ><input id="us" type="radio" name="uk-us" value="us" checked />
-  <label for="uk">UK</label
-  ><input id="uk" type="radio" name="uk-us" value="uk" />
-</fieldset>
-<div>
-  <button class="generate">Generate random story</button>
-</div>
-<!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
-<p class="story"></p>
+
 </body>
 </html>
