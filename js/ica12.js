@@ -23,3 +23,5 @@ function displayQuote(quote) {
     const quoteText = document.querySelector('#js-quote-text');
     quoteText.textContent = quote;
 }
+
+getQuote();
