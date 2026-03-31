@@ -19,3 +19,8 @@ async function getQuote() {
     alert('Failed to fetch new quote');
    }
 }
+
+function displayQuote(quote) {
+    const quoteText = document.querySelector('#js-quote-text');
+    quoteText.textContent(quote);
+}
