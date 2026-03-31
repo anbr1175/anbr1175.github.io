@@ -7,7 +7,7 @@ const endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
 newQuoteButton.addEventListener("click", getQuote);
 twitterButton.addEventListener("click", showAnswer);
 
-async function getQuote() {
+function getQuote() {
   fetch(endpoint)
     .then(response => {
       if (!response.ok) {
@@ -24,7 +24,6 @@ async function getQuote() {
       alert("Sorry! Something went wrong while fetching trivia.");
     });
 }
-
 
 function displayQuote(trivia) {
   const quoteText = document.querySelector("#js-quote-text");
