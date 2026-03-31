@@ -1,45 +1,34 @@
-let newBtn = document.querySelector('#js-new-quote');
-newBtn.addEventListener('click', getQuote);
+const newQuoteButton = document.querySelector("#js-new-quote");
 
-let answerBtn = document.querySelector('#js-tweet');
-newBtn.addEventListener('click', showAnswer);
+const twitterButton = document.querySelector('#js-tweet');
 
-const answerText = document.querySelector('#js-answer-text');
+const endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
 
-let current = {
-    question:"",
-    answer:""
-}
-
-const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
+newQuoteButton.addEventListener("click", getQuote);
+twitterButton.addEventListener("click", showAnswer);
 
 async function getQuote() {
-   try {
-    const response = await fetch(endpoint);
-    if (!response.ok) {
-        throw Error(response.statusText);
-    }
-    const json = await response.json();
-    console.log(json);
-    displayQuote(json['question']);
-    current.question = json("question");
-    current.answer = json("answer");
-    console.log(current.answer);
-   }
-   catch (err) {
-    console.log(err)
-    alert('Failed to fetch new quote');
-   }
+  fetch(endpoint)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+      displayQuote(data);
+    })
+    .catch(error => {
+      console.error("Error fetching trivia:", error);
+      alert("Sorry! Something went wrong while fetching trivia.");
+    });
 }
 
-function displayQuote(quote) {
-    const quoteText = document.querySelector('#js-quote-text');
-    quoteText.textContent = quote;
-    answerText.textContent = "";
-}
 
-function showAnswer() {
-    answerText.textContent = current.answer;
+function displayQuote(trivia) {
+  const quoteText = document.querySelector("#js-quote-text");
+  quoteText.textContent = trivia.question;
 }
 
 getQuote();
