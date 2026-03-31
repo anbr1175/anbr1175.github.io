@@ -4,6 +4,18 @@ newBtn.addEventListener('click', getQuote);
 
 const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
 
-function getQuote() {
+async function getQuote() {
    // alert("THIS WORKS!");
+   try {
+    const response = await fetch(endpoint);
+    if (!response.ok) {
+        throw Error(response.statusText);
+    }
+    const json = await response.json();
+    console.log(json);
+   }
+   catch (err) {
+    console.log(err)
+    alert('Failed to fetch new quote');
+   }
 }
