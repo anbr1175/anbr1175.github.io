@@ -12,7 +12,7 @@ async function getQuote() {
     }
     const json = await response.json();
     console.log(json);
-    displayQuote(json);
+    displayQuote(json['question']);
    }
    catch (err) {
     console.log(err)
