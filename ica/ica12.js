@@ -1,11 +1,8 @@
 const newQuoteButton = document.querySelector("#js-new-quote");
 
-const twitterButton = document.querySelector('#js-tweet');
-
 const endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
 
 newQuoteButton.addEventListener("click", getQuote);
-twitterButton.addEventListener("click", showAnswer);
 
 function getQuote() {
   fetch(endpoint)
