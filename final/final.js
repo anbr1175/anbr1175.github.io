@@ -1,0 +1,1 @@
+const volumeValue = document.getElementById("volumeValue");
