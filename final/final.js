@@ -47,7 +47,7 @@ function spawnButton() {
         if (btn.parentElement){
             btn.remove();
         }
-    },1000);
+    },900);
 }
 
 spawnInterval = setInterval(() => {
