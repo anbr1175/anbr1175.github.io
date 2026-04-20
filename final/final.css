@@ -17,3 +17,20 @@ body {
     width: 800px;
     height: 450px;
 }
+
+.mole-btn {
+  position: absolute;
+  padding: 12px 18px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgb(143, 153, 193);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+.mole-btn:hover {
+  transform: scale(1.05);
+}
