@@ -18,6 +18,30 @@ function spawnButton() {
 
     const randomChange = changeOptions[Math.floor(Math.random() * changeOptions.length)];
     btn.textContent = randomChange > 0 ? `+${randomChange}` : `${randomChange}`;
+
+    const areaWidth = gameArea.clientWidth;
+    const areaHeight = gameArea.clientHeight;
+
+    const btnWidth = 80;
+    const btnHeight = 80;
+
+    const randomX = Math.random() * (areaWidth - btnWidth);
+    const randomY = Math.random() * (areaHeight - btnHeight);
+    
+    btn.style.left = `${randomX}px`;
+    btn.style.top = `${randomY}px`;
+
+    btn.addEventListener("click", () => {
+        volume += randomChange;
+        if (volume > 100) volume = 100;
+        if (volume < 0) volume = 0;
+
+        volumeValue.textContent = volume;
+        btn.remove();
+    });
+
+
+
 }
 
 spawnInterval = setInterval(() => {
