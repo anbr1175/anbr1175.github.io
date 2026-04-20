@@ -1,5 +1,6 @@
 const volumeValue = document.getElementById("volumeValue");
 const gameArea = document.getElementById("gameArea");
+const startButton = document.getElementById("startButton");
 const endButton = document.getElementById("endButton");
 const finalMessage = document.getElementById("finalMessage");
 
@@ -54,6 +55,18 @@ spawnInterval = setInterval(() => {
     spawnButton();
     spawnButton();
 },700);
+
+startButton.addEventListener("click", () => {
+  if (gameRunning) return;
+
+  gameRunning = true;
+  finalMessage.textContent = "";
+
+  spawnInterval = setInterval(() => {
+    spawnButton();
+    spawnButton();
+  }, 1000);
+});
 
 endButton.addEventListener("click", () => {
     gameRunning = false;
