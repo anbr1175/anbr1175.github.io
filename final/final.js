@@ -6,7 +6,7 @@ const finalMessage = document.getElementById("finalMessage");
 
 
 let volume = 50;
-let gameRunning = true;
+let gameRunning = false;
 let spawnInterval;
 
 const changeOptions = [1,1,4,-3,17,-19,30,-31,11,-14,-7,8,25,20,-22,-1]
