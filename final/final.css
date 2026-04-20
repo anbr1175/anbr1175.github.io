@@ -17,8 +17,8 @@ body {
     width: 800px;
     height: 450px;
     margin: 0 auto 20px auto;
-    background: #ddd;
-    border: 4px solid #333;
+    background: #eceff6;
+    border: 4px solid #6585db;
     overflow: hidden;
 }
 
@@ -30,9 +30,9 @@ body {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  background-color: rgb(143, 153, 193);
+  background-color: rgb(107, 172, 233);
   color: white;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 8px rgba(155, 207, 226, 0.25);
 }
 
 .mole-btn:hover {

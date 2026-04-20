@@ -9,12 +9,12 @@ let volume = 50;
 let gameRunning = true;
 let spawnInterval;
 
-const changeOptions = [1,1,5,14,17,-19,30,-31,11,-14,-7,8]
+const changeOptions = [1,1,4,-3,17,-19,30,-31,11,-14,-7,8,25,20,-22,-1]
 
 function spawnButton() {
     if (!gameRunning) return;
 
-    const btn = document.getElementById("button");
+    const btn = document.createElement("button");
     btn.classList.add("mole-btn");
 
     const randomChange = changeOptions[Math.floor(Math.random() * changeOptions.length)];
@@ -47,7 +47,7 @@ function spawnButton() {
         if (btn.parentElement){
             btn.remove();
         }
-    },800);
+    },1000);
 }
 
 spawnInterval = setInterval(() => {
