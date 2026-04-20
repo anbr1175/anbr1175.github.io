@@ -6,3 +6,14 @@ body {
 .container {
     max-width: 900px;
 }
+
+.volume-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#gameArea {
+    position: relative;
+    width: 800px;
+    height: 450px;
+}
