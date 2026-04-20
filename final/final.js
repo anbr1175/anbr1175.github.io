@@ -40,8 +40,13 @@ function spawnButton() {
         btn.remove();
     });
 
+    gameArea.appendChild(btn);
 
-
+    setTimeout (() => {
+        if (btn.parentElement){
+            btn.remove();
+        }
+    },800);
 }
 
 spawnInterval = setInterval(() => {
@@ -49,3 +54,10 @@ spawnInterval = setInterval(() => {
     spawnButton();
     spawnButton();
 },700);
+
+endButton.addEventListener("click", () => {
+    gameRunning = false;
+    clearInterval(spawnInterval);
+    gameArea.innerHTML = "";
+    finalMessage.textContent = `You ended with a volume of ${volume}%.`;
+});
