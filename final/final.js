@@ -9,7 +9,7 @@ let volume = 50;
 let gameRunning = false;
 let spawnInterval;
 
-const changeOptions = [1,1,4,-3,17,-19,30,-31,11,-14,-7,8,25,20,-22,-1]
+const changeOptions = [1,1,4,7,18,20,20,22,-1,-1,-4,-9,-20,-20,-22]
 
 function spawnButton() {
     if (!gameRunning) return;
@@ -47,11 +47,10 @@ function spawnButton() {
         if (btn.parentElement){
             btn.remove();
         }
-    },900);
+    },1500);
 }
 
 spawnInterval = setInterval(() => {
-    spawnButton();
     spawnButton();
     spawnButton();
 },700);
@@ -63,7 +62,6 @@ startButton.addEventListener("click", () => {
   finalMessage.textContent = "";
 
   spawnInterval = setInterval(() => {
-    spawnButton();
     spawnButton();
   }, 1000);
 });
